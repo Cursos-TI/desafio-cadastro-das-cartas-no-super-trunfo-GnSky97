@@ -65,6 +65,7 @@ int main() {
     printf("PIB: %.2f\n", pib1);// Exibe com 2 casas decimais
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos1);
     
+    // Exibindo os dados coletados
     printf("\n\nCarta B \n");
     printf("Estado: %c\n", estado2);
     printf("Código da Carta: %s\n", cod_carta2);
