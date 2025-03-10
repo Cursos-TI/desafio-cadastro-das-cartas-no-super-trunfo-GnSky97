@@ -29,7 +29,7 @@ int main() {
     scanf("%s", cod_carta1); // Solicita o código da carta e armazena em cod_carta1 (não é necessário usar & para arrays)
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", cidade1); // Solicita o nome da cidade e armazena em cidade1 (não é necessário usar & para arrays)
+    scanf(" %[^\n]", cidade1); // Solicita o nome da cidade e armazena em cidade1 (não é necessário usar & para arrays)
 
     printf("Digite o número de habitantes: \n");
     scanf("%d", &populacao1); // Solicita o número de habitantes da cidade e armazena em populacao1
@@ -52,7 +52,7 @@ int main() {
     scanf("%s", cod_carta2); // Solicita o código da carta para a Carta B e armazena em cod_carta2
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", cidade2); // Solicita o nome da cidade para a Carta B e armazena em cidade2
+    scanf(" %[^\n]", cidade2); // Solicita o nome da cidade para a Carta B e armazena em cidade2
 
     printf("Digite o número de habitantes: \n");
     scanf("%d", &populacao2); // Solicita o número de habitantes da cidade para a Carta B e armazena em populacao2
