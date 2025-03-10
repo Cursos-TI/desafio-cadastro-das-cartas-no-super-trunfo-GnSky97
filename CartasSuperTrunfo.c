@@ -9,6 +9,8 @@ int main() {
     float area1, area2; // Variáveis para armazenar a área das cidades em km²
     float pib1, pib2; // Variáveis para armazenar o PIB das cidades
     int pontos_turisticos1, pontos_turisticos2; // Variáveis para armazenar o número de pontos turísticos das cidades
+    float densidade_pop1, densidade_pop2; // Variáveis para armazenar a densidade populacional de cada cidade
+    float pib_per1, pib_per2; // Variáveis para armazenar o PIB per capita de cada cidade
 
     // Introdução do jogo Super Trunfo
     printf("Bem-vindo ao jogo Super Trunfo!\n\n");
@@ -70,19 +72,29 @@ int main() {
     printf("Código da Carta: %s\n", cod_carta1); // Exibe o código da Carta A
     printf("Nome da Cidade: %s\n", cidade1); // Exibe o nome da cidade da Carta A
     printf("População: %d\n", populacao1); // Exibe a população da cidade da Carta A
-    printf("Área(em km²): %.2fkm²\n", area1); // Exibe a área da cidade da Carta A com 2 casas decimais
-    printf("PIB: %.2f\n", pib1); // Exibe o PIB da cidade da Carta A com 2 casas decimais
+    printf("Área(em km²): %.2f km²\n", area1); // Exibe a área da cidade da Carta A com 2 casas decimais
+    printf("PIB: %.2f bilhões de reais\n", pib1); // Exibe o PIB da cidade da Carta A com 2 casas decimais
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos1); // Exibe o número de pontos turísticos da cidade da Carta A
-    
+    densidade_pop1 = (float)(populacao1 / area1); // Calcula a densidade populacional da Carta A
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_pop1); // Exibe a densidade populacional da Carta A
+    pib_per1 = (pib1 / (float)populacao1); // Calcula o PIB per capita da Carta A
+    printf("PIB per Capita: %.2f reais", pib_per1); // Exibe o PIB per capita da Carta A
+
+
+
     // Exibindo os dados coletados para a Carta B
     printf("\n\nCarta B \n"); // Exibe o título "Carta B"
     printf("Estado: %c\n", estado2); // Exibe o estado representado por uma letra para a Carta B
     printf("Código da Carta: %s\n", cod_carta2); // Exibe o código da Carta B
     printf("Nome da Cidade: %s\n", cidade2); // Exibe o nome da cidade para a Carta B
     printf("População: %d\n", populacao2); // Exibe a população da cidade para a Carta B
-    printf("Área(em km²): %.2fkm²\n", area2); // Exibe a área da cidade para a Carta B com 2 casas decimais
-    printf("PIB: %.2f\n", pib2); // Exibe o PIB da cidade para a Carta B com 2 casas decimais
-    printf("Número de Pontos Turísticos: %d\n\n", pontos_turisticos2); // Exibe o número de pontos turísticos da cidade para a Carta B
+    printf("Área(em km²): %.2f km²\n", area2); // Exibe a área da cidade para a Carta B com 2 casas decimais
+    printf("PIB: %.2f bilhões de reais\n", pib2); // Exibe o PIB da cidade para a Carta B com 2 casas decimais
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2); // Exibe o número de pontos turísticos da cidade para a Carta B
+    densidade_pop2 = (float)(populacao2 / area2); // Calcula a densidade populacional da Carta B
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_pop2); // Exibe a densidade populacional da Carta B
+    pib_per2 = (pib2 / (float) populacao2); // Calcula o PIB per capita da Carta B
+    printf("PIB per Capita: %.2f reais\n", pib_per2); // Exibe o PIB per capita da Carta B
 
     return 0; // Retorna 0 para indicar que o programa terminou corretamente
 }
